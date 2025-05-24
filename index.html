@@ -1,1 +1,93 @@
-<!DOCTYPE html><html><head><title>Som da Estrada</title></head><body><h1>Em breve...</h1></body></html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Som da Estrada</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Arial', sans-serif;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3em;
+      text-shadow: 2px 2px 8px black;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.5em;
+      text-shadow: 1px 1px 4px black;
+    }
+
+    .login-box {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px #000;
+      margin-top: 30px;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      width: 250px;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin-top: 10px;
+      background-color: #00ffcc;
+      color: black;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #00ccaa;
+    }
+
+    .audio-control {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎶 Som da Estrada</h1>
+  <p>O som perfeito pra pegar a estrada!</p>
+
+  <div class="login-box">
+    <h2>Login</h2>
+    <form>
+      <input type="email" placeholder="Seu e-mail" required><br>
+      <input type="password" placeholder="Sua senha" required><br>
+      <button type="submit">Entrar</button>
+    </form>
+  </div>
+
+  <div class="audio-control">
+    <audio controls loop autoplay>
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+      Seu navegador não suporta áudio.
+    </audio>
+  </div>
+
+</body>
+</html>
